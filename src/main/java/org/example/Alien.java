@@ -2,6 +2,15 @@ package org.example;
 
 public class Alien {
     private int k ;
+    private Laptop lap = new Laptop();
+
+    public Laptop getLap() {
+        return lap;
+    }
+
+    public void setLap(Laptop lap) {
+        this.lap = lap;
+    }
 
     public int getK() {
         return k;
@@ -16,6 +25,7 @@ public class Alien {
     }
     public void code(){
         System.out.println("coding");
+        lap.compile();
 
     }
 }

@@ -6,9 +6,11 @@
 
 <!--        this will fetch the bean when its called in the context.getbean("idname")-->
 <!--        the  id name should be same as the id-->
-        <bean id="alien1" class="org.example.Alien" scope="prototype">
+        <bean id="alien1" class="org.example.Alien" >
 <!--                setter injection-->
                 <property name="k" value="90"/>
+<!--            connecting the lap bean created below-->
+                <property name="lap" ref="lap"/>
         </bean>
 
         <bean id="lap" class="org.example.Laptop">

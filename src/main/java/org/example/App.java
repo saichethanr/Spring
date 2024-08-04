@@ -21,6 +21,7 @@ public class App
         //but it depends on the no of
 
         Alien obj1 = (Alien) context.getBean("alien1");
+        obj1.code();
         //the below line is one way to store the value but we can also do it using setter injection which is done in the setter.xml
 //        obj1.setK(21);
         System.out.println(obj1.getK());
