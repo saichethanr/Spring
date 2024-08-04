@@ -1,8 +1,19 @@
 package org.example;
 
+import java.beans.ConstructorProperties;
+
 public class Alien {
     private int k ;
     private Laptop lap = new Laptop();
+
+    //sprcified in the spring.xml file
+    @ConstructorProperties({"age","lap"})
+    public Alien(int k,Laptop lap){
+        System.out.println("constructor for the k and lap variable called");
+         this.k = k;
+         this.lap = lap;
+    }
+
 
     public Laptop getLap() {
         return lap;
