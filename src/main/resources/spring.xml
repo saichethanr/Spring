@@ -6,18 +6,10 @@
 
 <!--        this will fetch the bean when its called in the context.getbean("idname")-->
 <!--        the  id name should be same as the id-->
-        <bean id="alien1" class="org.example.Alien">
-        </bean>
-
-        <bean id="alien2" class="org.example.Alien">
+        <bean id="alien1" class="org.example.Alien" scope="prototype">
         </bean>
 
         <bean id="lap" class="org.example.Laptop">
         </bean>
-
-        <bean class="org.example.Laptop">
-        </bean>
-
-
 
 </beans>
