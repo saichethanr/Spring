@@ -20,7 +20,7 @@ public class App
         //so the number of objects created is not depending on the no of reference for a class
         //but it depends on the no of
 
-        Alien obj1 = (Alien) context.getBean("alien1");
+        Alien obj1 = (Alien) context.getBean("alien1",Alien.class);
         obj1.code();
         //the below line is one way to store the value but we can also do it using setter injection which is done in the setter.xml
 //        obj1.setK(21);

@@ -20,13 +20,12 @@
 <!--            explicit mention of the reference will overwrite the autowire-->
 <!--            <property name="comp" ref="comp1"/>-->
         </bean>
-
-
-
-    <bean id="comp" class="org.example.Laptop" primary="true">
+<!--when a non leazy bean is dependent on the lazy bean then the object of the  lazy bean is creaated-->
+<!--    object of the bean will only be created when its leaded-->
+    <bean id="comp" class="org.example.Laptop" primary="true" lazy-init="true">
     </bean>
 
-    <bean id="comp1" class="org.example.Desktop">
+    <bean id="comp1" class="org.example.Desktop" lazy-init="true">
     </bean>
 
 </beans>
