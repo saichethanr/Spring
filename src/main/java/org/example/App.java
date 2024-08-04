@@ -21,15 +21,17 @@ public class App
         //but it depends on the no of
 
         Alien obj1 = (Alien) context.getBean("alien1");
-        obj1.k=90;
+        //the below line is one way to store the value but we can also do it using setter injection which is done in the setter.xml
+//        obj1.setK(21);
+        System.out.println(obj1.getK());
         //how many ever times we create a reference only a single object is created so if any
         //attribute of object is changes by the reference all the references will have the same value
         //this is singolton scoping which is default
         //but if we want prototype scoping then we would need to change the spring.xml file
-        //on protopye mode on the Application context line object would not be create--- it would onl chheck for the required breans 
-        System.out.println(obj1.k);
-        Alien obj2 = (Alien) context.getBean("alien1");
-        System.out.println(obj2.k);
+        //on protopye mode on the Application context line object would not be create--- it would onl chheck for the required breans
+
+//        Alien obj2 = (Alien) context.getBean("alien1");
+
 
     }
 }
