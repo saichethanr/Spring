@@ -4,18 +4,18 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--        this will fetch the bean when its called in the context.getbean("idname")-->
-<!--        the  id name should be same as the id-->
+        <!--this will fetch the bean when its called in the context.getbean("idname")-->
+        <!--the  id name should be same as the id-->
         <bean id="alien1" class="org.example.Alien" >
-<!--                setter injection-->
-<!--                <property name="k" value="90"/>-->
+            <!--setter injection-->
+            <!--<property name="k" value="90"/>-->
             <!--if we dont want to use the property tag for initialization then we can use the constructor tag-->
             <!--if we have two variable we can pass two things and it looks for the sequence-->
             <!--but to solve the sequence problems we have to either use type or index -->
             <!-- but the best is to use the name of the variable-->
             <constructor-arg name="age" value="99"/>
             <constructor-arg name="lap"  ref="lap"/>
-<!--            connecting the lap bean created below-->
+            <!--connecting the lap bean created below-->
             <property name="lap" ref="lap"/>
         </bean>
 
