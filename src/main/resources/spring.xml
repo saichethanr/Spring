@@ -1,0 +1,12 @@
+<!--declaration for the bean-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--        this will fetch the bean when its called in the context.getbean("idname")-->
+<!--        the  id name should be same as the id-->
+        <bean id="alien" class="org.example.Alien">
+        </bean>
+
+</beans>
