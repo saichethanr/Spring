@@ -23,8 +23,8 @@
 
 
 
-<!--    <bean id="comp" class="org.example.Laptop">-->
-<!--    </bean>-->
+    <bean id="comp" class="org.example.Laptop" primary="true">
+    </bean>
 
     <bean id="comp1" class="org.example.Desktop">
     </bean>
