@@ -4,11 +4,12 @@ import java.beans.ConstructorProperties;
 
 public class Alien {
     private int k ;
+    private Computer comp;
     private Laptop lap = new Laptop();
 
     //sprcified in the spring.xml file
     @ConstructorProperties({"age","lap"})
-    public Alien(int k,Laptop lap){
+    public Alien(int k,Computer com){
         System.out.println("constructor for the k and lap variable called");
          this.k = k;
          this.lap = lap;
@@ -21,6 +22,14 @@ public class Alien {
 
     public void setLap(Laptop lap) {
         this.lap = lap;
+    }
+
+    public Computer getComp() {
+        return comp;
+    }
+
+    public void setComp(Computer comp) {
+        this.comp = comp;
     }
 
     public int getK() {
@@ -36,7 +45,7 @@ public class Alien {
     }
     public void code(){
         System.out.println("coding");
-        lap.compile();
+        comp.compile();
 
     }
 }
