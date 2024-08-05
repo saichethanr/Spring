@@ -25,6 +25,6 @@
         </bean>
 <!--when a non leazy bean is dependent on the lazy bean then the object of the  lazy bean is creaated-->
 <!--    object of the bean will only be created when its leaded-->
-    <bean id="comp" class="org.example.Desktop" lazy-init="true">
-    </bean>
+<!--    <bean id="comp" class="org.example.Desktop" lazy-init="true">-->
+<!--    </bean>-->
 </beans>
