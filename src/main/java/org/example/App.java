@@ -13,9 +13,9 @@ public class App
         //JAVA based config
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         //the default name of the bean is actually the method name
-        Desktop desk = context.getBean(Desktop.class);
+        Desktop desk = (Desktop) context.getBean(Desktop.class);
 
-        Desktop desk1 = context.getBean(Desktop.class);
+        Desktop desk1 = (Desktop) context.getBean(Desktop.class);
 
 
 

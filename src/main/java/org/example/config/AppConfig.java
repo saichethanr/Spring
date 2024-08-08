@@ -25,16 +25,16 @@ public class AppConfig {
 //        obj.setComp(com);
 //        return obj;
 //    }
-//
-//
-//    //as there are two beans below auto wired to the Alien bean above its difficult to configure which once hence
-//    //use of primary bean is very essential
+
+
+    //as there are two beans below auto wired to the Alien bean above its difficult to configure which once hence
+    //use of primary bean is very essential
 //    @Bean()
 //    @Scope("prototype")
 //    public Desktop desktop(){
 //        return new Desktop();
 //    }
-//
+
 //    @Bean
 //    @Primary
 //    public Laptop laptop(){
