@@ -13,9 +13,8 @@ public class  Alien {
     //as by using the @component aspect we have notjing to write in the config files
     //we have to look for connections for com
     //which we can find using the autowiring
-    
+
     @Autowired
-    @Qualifier("desk")
     private Computer comp;
 
 
